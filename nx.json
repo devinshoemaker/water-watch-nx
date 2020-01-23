@@ -1,0 +1,22 @@
+{
+  "npmScope": "water-watch",
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "water-watch": {
+      "tags": []
+    },
+    "water-watch-e2e": {
+      "tags": [],
+      "implicitDependencies": ["water-watch"]
+    }
+  }
+}
