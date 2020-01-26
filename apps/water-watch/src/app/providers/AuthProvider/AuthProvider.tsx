@@ -4,12 +4,9 @@ import { auth } from '../../firebaseApp';
 export const AuthContext = React.createContext<boolean>(false);
 
 const AuthProvider: React.FC = ({ children }) => {
+  const localAuthentication = localStorage.getItem('authenticated');
   const [authenticated, setAuthenticated] = useState<boolean>(
-    JSON.parse(
-      localStorage.getItem('authenticated') !== null
-        ? localStorage.getItem('authenticated')!
-        : 'false'
-    )
+    JSON.parse(localAuthentication !== null ? localAuthentication : 'false')
   );
 
   useEffect(() => {

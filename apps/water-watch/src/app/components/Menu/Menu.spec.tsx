@@ -14,7 +14,7 @@ describe('Menu', () => {
   });
 
   it('should list pages', () => {
-    const { getByText, getByTestId } = render(<Menu />);
+    const { getByText } = render(<Menu />);
     getByText('Home');
     getByText('Settings');
   });
