@@ -16,6 +16,7 @@
             "polyfills": "apps/water-watch/src/polyfills.ts",
             "tsConfig": "apps/water-watch/tsconfig.app.json",
             "assets": [
+              "apps/water-watch/src/manifest.json",
               "apps/water-watch/src/assets"
             ],
             "styles": ["apps/water-watch/src/styles.css"],
