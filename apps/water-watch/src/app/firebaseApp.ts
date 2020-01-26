@@ -1,18 +1,10 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
+import { environment } from '../environments/environment';
 
-const firebaseConfig = {
-  apiKey: '<api-key>',
-  authDomain: '<auth-domain>',
-  databaseURL: '<database-url>',
-  projectId: '<project-id>',
-  storageBucket: '<storage-bucket>',
-  messagingSenderId: '<messaging-sender-id>',
-  appId: '<app-id>',
-  measurementId: '<measurement-id>'
-};
-
-const firebaseApp: firebase.app.App = firebase.initializeApp(firebaseConfig);
+const firebaseApp: firebase.app.App = firebase.initializeApp(
+  environment.firebase
+);
 export const auth = firebaseApp.auth();
 
 export default firebaseApp;
