@@ -20,7 +20,7 @@
             ],
             "styles": ["apps/water-watch/src/styles.css"],
             "scripts": [],
-            "webpackConfig": "@nrwl/react/plugins/webpack"
+            "webpackConfig": "apps/water-watch/webpack.config.js"
           },
           "configurations": {
             "production": {
