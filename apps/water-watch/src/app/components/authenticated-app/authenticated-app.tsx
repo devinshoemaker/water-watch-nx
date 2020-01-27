@@ -4,7 +4,7 @@ import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
 import Home from '../../pages/Home/Home';
 import Settings from '../../pages/Settings/Settings';
-import Menu from '../Menu/Menu';
+import Menu from '../menu/menu';
 
 export const AuthenticatedApp = () => {
   return (
