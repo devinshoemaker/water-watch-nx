@@ -4,7 +4,7 @@ import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
 import Login from '../../pages/Login/Login';
 
-export const UnauthenticatedApp: React.FC = () => {
+export const UnauthenticatedApp = () => {
   return (
     <IonApp>
       <IonReactRouter>

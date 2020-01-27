@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import AuthenticatedApp from './components/authenticated-app/authenticated-app';
-import UnauthenticatedApp from './components/UnauthenticatedApp/UnauthenticatedApp';
+import UnauthenticatedApp from './components/unauthenticated-app/unauthenticated-app';
 import { AuthContext } from './providers/AuthProvider/AuthProvider';
 
 /* Core CSS required for Ionic components to work properly */
