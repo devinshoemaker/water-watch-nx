@@ -1,18 +1,20 @@
-import React from 'react';
 import {
+  IonContent,
   IonHeader,
-  IonTitle,
-  IonToolbar,
   IonPage,
-  IonContent
+  IonTitle,
+  IonToolbar
 } from '@ionic/react';
-import firebase from 'firebase/app';
+import firebase from 'firebase';
 import * as firebaseui from 'firebaseui';
+import React from 'react';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 
-import { auth } from '../../firebaseApp';
+export interface AuthPageProps {
+  firebaseAuth: firebase.auth.Auth;
+}
 
-export const Login: React.FC = () => {
+export const AuthPage = (props: AuthPageProps) => {
   const uiConfig = {
     signInSuccessUrl: '/home',
     signInOptions: [firebase.auth.EmailAuthProvider.PROVIDER_ID],
@@ -27,10 +29,13 @@ export const Login: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent>
-        <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={auth} />
+        <StyledFirebaseAuth
+          uiConfig={uiConfig}
+          firebaseAuth={props.firebaseAuth}
+        />
       </IonContent>
     </IonPage>
   );
 };
 
-export default Login;
+export default AuthPage;
