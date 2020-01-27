@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@water-watch/home": ["libs/home/src/index.ts"]
+      "@water-watch/home": ["libs/home/src/index.ts"],
+      "@water-watch/auth": ["libs/auth/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
