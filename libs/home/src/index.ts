@@ -1,1 +1,1 @@
-export * from './lib/home';
+export * from './lib/containers/home-page/home-page';
