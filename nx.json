@@ -17,6 +17,9 @@
     "water-watch-e2e": {
       "tags": [],
       "implicitDependencies": ["water-watch"]
+    },
+    "home": {
+      "tags": []
     }
   }
 }
