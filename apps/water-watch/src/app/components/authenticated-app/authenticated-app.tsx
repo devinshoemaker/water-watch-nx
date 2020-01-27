@@ -6,7 +6,7 @@ import Home from '../../pages/Home/Home';
 import Settings from '../../pages/Settings/Settings';
 import Menu from '../Menu/Menu';
 
-export const AuthenticatedApp: React.FC = () => {
+export const AuthenticatedApp = () => {
   return (
     <IonApp>
       <IonReactRouter>

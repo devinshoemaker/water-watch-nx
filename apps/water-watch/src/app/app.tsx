@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import AuthenticatedApp from './components/AuthenticatedApp/AuthenticatedApp';
+import AuthenticatedApp from './components/authenticated-app/authenticated-app';
 import UnauthenticatedApp from './components/UnauthenticatedApp/UnauthenticatedApp';
 import { AuthContext } from './providers/AuthProvider/AuthProvider';
 
