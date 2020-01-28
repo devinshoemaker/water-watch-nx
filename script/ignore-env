@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# script/ignore-env: Ignore all environment variables to
+#                    prevent them from being committed.
+
+# Exit immediately if a command exits with a non-zero status
+set -e
+
+echo "==> Ignoring environment variables..."
+
+git update-index --assume-unchanged apps/water-watch/src/environments/environment*.ts apps/water-watch-e2e/cypress.env.json

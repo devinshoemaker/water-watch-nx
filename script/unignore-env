@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# script/unignore-env: Unignore all environment variables
+#                      to allow them to be committed.
+
+# Exit immediately if a command exits with a non-zero status
+set -e
+
+echo "==> Unignoring environment variables..."
+
+git update-index --no-assume-unchanged apps/water-watch/src/environments/environment*.ts apps/water-watch-e2e/cypress.env.json
