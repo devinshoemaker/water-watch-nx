@@ -1195,27 +1195,27 @@
     lodash.camelcase "^4.3.0"
     protobufjs "^6.8.6"
 
-"@ionic/core@4.11.9":
-  version "4.11.9"
-  resolved "https://registry.yarnpkg.com/@ionic/core/-/core-4.11.9.tgz#bfce4240f1904bedeb3b8118ad020ca310e13f21"
-  integrity sha512-ExFhBQYRTOXmEBx/uLjM8Y0peafkROvFFzTEbpkSUE9ZEio5thNRt2+rU5t8F8bUuMY9ubhX0nJiCPPn8OdntA==
+"@ionic/core@4.11.10":
+  version "4.11.10"
+  resolved "https://registry.yarnpkg.com/@ionic/core/-/core-4.11.10.tgz#1aa5f2e31b8d0c741471af9c272964c34155ab5a"
+  integrity sha512-PeonKl5E+VOTBeKDr83y0N/1wbfkZ5jV3PSJTsVPE3Q15LxGEO0GzBvVMgkmkssuqOI3WJPXxYWZVL8ejzSFOQ==
   dependencies:
     ionicons "^4.6.3"
     tslib "^1.10.0"
 
 "@ionic/react-router@^4.11.9":
-  version "4.11.9"
-  resolved "https://registry.yarnpkg.com/@ionic/react-router/-/react-router-4.11.9.tgz#90b423153ddad181027704813395645e9ddf2fb4"
-  integrity sha512-0lIkJcBZH2rHrP9lb27G2Xa43qKJlMRRdD7XCq8dGV6g9sRd1ntVJ4JfH3UxstqlQd+kpHbdJrAsl187EC9KaQ==
+  version "4.11.10"
+  resolved "https://registry.yarnpkg.com/@ionic/react-router/-/react-router-4.11.10.tgz#88a33d8fdb672b81bfc08b6d3e1337e3de3ce43c"
+  integrity sha512-Kxya6GBKmy42A5B1Mj2jD7by4xV/MyyQrsaqr4hgXzC2z27wjg4WzMKl1L0BnaAhZCxjMOLGShgflRA4DPpnqw==
   dependencies:
     tslib "*"
 
 "@ionic/react@^4.11.9":
-  version "4.11.9"
-  resolved "https://registry.yarnpkg.com/@ionic/react/-/react-4.11.9.tgz#2ff5fa7cd9b40d2a229f5de7b9e54785e4bf5ec7"
-  integrity sha512-I322PL6cwi0TU9mGgmeJFaz+0SrlcjX0PaqMkyOECeG+hnzWTRMBJf6hw7IALwOYCzXJV095KzRr0q0g/YBgDQ==
+  version "4.11.10"
+  resolved "https://registry.yarnpkg.com/@ionic/react/-/react-4.11.10.tgz#33704093d8c2686e6c9a112eb29275109d5334da"
+  integrity sha512-EF9H0HDb3MO/E8R2sBACYweQG2OzsHZBdxCYEHTt0lnaOCS2ykB93FK8f0WllP19e5Bx7jembZC4UugwjAxnTQ==
   dependencies:
-    "@ionic/core" "4.11.9"
+    "@ionic/core" "4.11.10"
     tslib "*"
 
 "@jest/console@^24.7.1", "@jest/console@^24.9.0":
