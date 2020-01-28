@@ -19,7 +19,9 @@
               "apps/water-watch/src/manifest.json",
               "apps/water-watch/src/assets"
             ],
-            "styles": ["apps/water-watch/src/styles.css"],
+            "styles": [
+              "apps/water-watch/src/styles.css"
+            ],
             "scripts": [],
             "webpackConfig": "apps/water-watch/webpack.config.js"
           },
@@ -68,7 +70,10 @@
               "apps/water-watch/tsconfig.app.json",
               "apps/water-watch/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/water-watch/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/water-watch/**"
+            ]
           }
         },
         "test": {
@@ -103,8 +108,13 @@
           "options": {
             "linter": "eslint",
             "config": "apps/water-watch-e2e/.eslintrc",
-            "tsConfig": ["apps/water-watch-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/water-watch-e2e/**"]
+            "tsConfig": [
+              "apps/water-watch-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/water-watch-e2e/**"
+            ]
           }
         }
       }
