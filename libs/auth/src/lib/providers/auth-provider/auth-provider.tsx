@@ -1,16 +1,21 @@
-import React, { useEffect, useState } from 'react';
-import { auth } from '../../firebaseApp';
+import firebase from 'firebase';
+import React, { ReactNode, useEffect, useState } from 'react';
 
 export const AuthContext = React.createContext<boolean>(false);
 
-const AuthProvider: React.FC = ({ children }) => {
+export interface AuthProviderProps {
+  firebaseAuth: firebase.auth.Auth;
+  children: ReactNode;
+}
+
+export const AuthProvider = (props: AuthProviderProps) => {
   const localAuthentication = localStorage.getItem('authenticated');
   const [authenticated, setAuthenticated] = useState<boolean>(
     JSON.parse(localAuthentication !== null ? localAuthentication : 'false')
   );
 
   useEffect(() => {
-    const unsubscribeFromAuth: firebase.Unsubscribe = auth.onAuthStateChanged(
+    const unsubscribeFromAuth: firebase.Unsubscribe = props.firebaseAuth.onAuthStateChanged(
       user => {
         localStorage.setItem('authenticated', (!!user).toString());
         setAuthenticated(!!user);
@@ -20,11 +25,11 @@ const AuthProvider: React.FC = ({ children }) => {
     return function cleanup() {
       unsubscribeFromAuth();
     };
-  }, []);
+  }, [props.firebaseAuth]);
 
   return (
     <AuthContext.Provider value={authenticated}>
-      {children}
+      {props.children}
     </AuthContext.Provider>
   );
 };

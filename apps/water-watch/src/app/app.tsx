@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import AuthenticatedApp from './components/authenticated-app/authenticated-app';
 import UnauthenticatedApp from './components/unauthenticated-app/unauthenticated-app';
-import { AuthContext } from './providers/AuthProvider/AuthProvider';
+import { AuthContext } from '@water-watch/auth';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';

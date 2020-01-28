@@ -1,11 +1,12 @@
+import { AuthProvider } from '@water-watch/auth';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './app/app';
+import { auth } from './app/firebaseApp';
 import * as serviceWorker from './serviceWorker';
-import AuthProvider from './app/providers/AuthProvider/AuthProvider';
 
 ReactDOM.render(
-  <AuthProvider>
+  <AuthProvider firebaseAuth={auth}>
     <App />
   </AuthProvider>,
   document.getElementById('root')
