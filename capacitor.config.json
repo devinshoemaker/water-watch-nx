@@ -1,0 +1,8 @@
+{
+  "appId": "com.devinshoemaker.waterwatch",
+  "appName": "Water Watch",
+  "bundledWebRuntime": false,
+  "npmClient": "yarn",
+  "webDir": "www",
+  "cordova": {}
+}
