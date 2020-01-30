@@ -3,6 +3,6 @@
   "appName": "Water Watch",
   "bundledWebRuntime": false,
   "npmClient": "yarn",
-  "webDir": "www",
+  "webDir": "dist/apps/water-watch",
   "cordova": {}
 }
