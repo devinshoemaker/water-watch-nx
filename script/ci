@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# script/ci: Set application to initial state and run test suite.
+
+# Exit immediately if a command exits with a non-zero status
+set -e
+
+# Store a local variable of the scripts current directory
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+${DIR}/setup
+${DIR}/test
