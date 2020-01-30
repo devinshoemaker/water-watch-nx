@@ -19,9 +19,7 @@
               "apps/water-watch/src/manifest.json",
               "apps/water-watch/src/assets"
             ],
-            "styles": [
-              "apps/water-watch/src/styles.css"
-            ],
+            "styles": ["apps/water-watch/src/styles.css"],
             "scripts": [],
             "webpackConfig": "apps/water-watch/webpack.config.js"
           },
@@ -70,10 +68,7 @@
               "apps/water-watch/tsconfig.app.json",
               "apps/water-watch/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/water-watch/**"
-            ]
+            "exclude": ["**/node_modules/**", "!apps/water-watch/**"]
           }
         },
         "test": {
@@ -108,13 +103,8 @@
           "options": {
             "linter": "eslint",
             "config": "apps/water-watch-e2e/.eslintrc",
-            "tsConfig": [
-              "apps/water-watch-e2e/tsconfig.e2e.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/water-watch-e2e/**"
-            ]
+            "tsConfig": ["apps/water-watch-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/water-watch-e2e/**"]
           }
         }
       }
@@ -169,6 +159,33 @@
           "options": {
             "jestConfig": "libs/auth/jest.config.js",
             "tsConfig": "libs/auth/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "settings": {
+      "root": "libs/settings",
+      "sourceRoot": "libs/settings/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "config": "libs/settings/.eslintrc",
+            "tsConfig": [
+              "libs/settings/tsconfig.lib.json",
+              "libs/settings/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/settings/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/settings/jest.config.js",
+            "tsConfig": "libs/settings/tsconfig.spec.json"
           }
         }
       }

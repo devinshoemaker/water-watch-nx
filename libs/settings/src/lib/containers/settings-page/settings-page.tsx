@@ -11,16 +11,20 @@ import {
   IonTitle,
   IonToolbar
 } from '@ionic/react';
+import firebase from 'firebase';
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import { auth } from '../../firebaseApp';
 
-export const Settings: React.FC = () => {
+export interface SettingsPageProps {
+  firebaseAuth: firebase.auth.Auth;
+}
+
+export const SettingsPage = (props: SettingsPageProps) => {
   const [showLogOutAlert, setShowLogOutAlert] = useState<boolean>(false);
   const history = useHistory();
 
   const logOutHandler = () => {
-    auth.signOut();
+    props.firebaseAuth.signOut();
     history.push('/login');
   };
 
@@ -60,4 +64,4 @@ export const Settings: React.FC = () => {
   );
 };
 
-export default Settings;
+export default SettingsPage;

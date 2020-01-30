@@ -23,6 +23,9 @@
     },
     "auth": {
       "tags": []
+    },
+    "settings": {
+      "tags": []
     }
   }
 }

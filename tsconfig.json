@@ -17,7 +17,8 @@
     "baseUrl": ".",
     "paths": {
       "@water-watch/home": ["libs/home/src/index.ts"],
-      "@water-watch/auth": ["libs/auth/src/index.ts"]
+      "@water-watch/auth": ["libs/auth/src/index.ts"],
+      "@water-watch/settings": ["libs/settings/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
